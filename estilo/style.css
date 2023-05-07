@@ -1,0 +1,95 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+
+@import
+url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+
+*{}
+
+:root{
+    --font1: verdana, Geneva, sans-serif;
+    --font2: 'Sriracha', cursiva;
+    --font3:'Bebas Neue'sans-serif;
+   
+}
+*{
+    margin: 0px;
+    padding:0px; 
+}
+html, body {
+    font-family:var(--font1);  
+    min-height: 100vh;
+    background-color:rgba(128, 255, 0, 0.283);
+}
+header{
+    font-family: var(--font2);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header> h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header> p {
+    padding-bottom: 50px;
+}
+header> a {
+
+}
+a{
+    color: rgb(237, 9, 9);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--font3);
+    padding-top:10px ;
+    padding-bottom: 10px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4vw;
+    width: 100%;
+    box-shadow: inset 1px 1px 0px black;
+  
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.imagem>p{
+    width: 800px;
+ background-color: rgba(0, 0, 0, 0.632);
+ box-shadow: inset 1px 1px 0px black;
+ text-shadow: 5px;
+}
+section#imagem01{
+    background-image:url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size:cover;
+}
+section#imagem02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size:cover;
+}
+section.normal{
+    background-color: rgba(233, 10, 10, 0.571);;
+    color: white;
+}
+section.imagem{
+    background-color: rgba(6, 246, 102, 0);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-attachment: fixed;
+}
+footer{
+    background-color: black;
+    color: rgb(255, 244, 240);
+    text-align: center;
+    padding: 15px;
+}
